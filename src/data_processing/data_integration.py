@@ -288,7 +288,13 @@ class DataIntegrationPipeline:
                        'geolocation_area', 'icd10_codes', 'medications',
                        'ckd_stage', 'has_ckd']
 
-        feature_cols = [col for col in engineered_df.columns if col not in exclude_cols]
+        # Also exclude columns with these keywords (handles merged columns with suffixes)
+        exclude_keywords = ['time_period', 'record_date', 'patient_id', 'zip_code',
+                           'geolocation_area', 'icd10_codes', 'medications']
+
+        feature_cols = [col for col in engineered_df.columns
+                       if col not in exclude_cols and
+                       not any(keyword in col for keyword in exclude_keywords)]
         self.feature_names = feature_cols
 
         X = engineered_df[feature_cols].copy()
