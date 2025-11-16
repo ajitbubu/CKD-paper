@@ -1,0 +1,89 @@
+# CKD XGBoost Model Configuration
+
+# Data Generation
+data:
+  n_patients: 1000
+  random_state: 42
+  synthetic_data_dir: data/synthetic
+  raw_data_dir: data/raw
+  processed_data_dir: data/processed
+
+# Model Configuration
+model:
+  type: binary  # 'binary' or 'multiclass'
+  use_smote: true
+  random_state: 42
+
+  # XGBoost Parameters
+  xgboost:
+    objective: binary:logistic
+    eval_metric: auc
+    max_depth: 6
+    learning_rate: 0.1
+    n_estimators: 100
+    subsample: 0.8
+    colsample_bytree: 0.8
+    min_child_weight: 1
+    gamma: 0
+    reg_alpha: 0
+    reg_lambda: 1
+    scale_pos_weight: 1
+
+# Training Configuration
+training:
+  test_size: 0.2
+  validation_size: 0.1
+  cv_folds: 5
+  tune_hyperparams: false  # Set to true for hyperparameter tuning
+
+  # Hyperparameter tuning grid
+  param_grid:
+    max_depth: [4, 6, 8]
+    learning_rate: [0.01, 0.1, 0.2]
+    n_estimators: [100, 200, 300]
+    subsample: [0.7, 0.8, 0.9]
+    colsample_bytree: [0.7, 0.8, 0.9]
+
+# Feature Engineering
+features:
+  # Clinical features
+  clinical:
+    - serum_creatinine
+    - egfr
+    - albuminuria_acr
+    - hba1c
+    - systolic_bp
+    - diastolic_bp
+    - bmi
+    - heart_rate
+
+  # Engineered features
+  engineered:
+    - pulse_pressure
+    - map
+    - creatinine_egfr_ratio
+    - comorbidity_count
+    - healthcare_utilization_score
+    - medication_adherence_ratio
+    - sdoh_risk_score
+    - dietary_health_ratio
+    - health_engagement_score
+
+# Evaluation Configuration
+evaluation:
+  shap_max_samples: 500
+  top_n_features: 20
+  save_visualizations: true
+
+  # Output directories
+  output:
+    models_dir: models
+    results_dir: results
+    figures_dir: results/figures
+    metrics_dir: results/metrics
+
+# Logging
+logging:
+  level: INFO
+  format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+  file: logs/training.log
