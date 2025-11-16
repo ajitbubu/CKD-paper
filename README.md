@@ -143,6 +143,23 @@ The notebook provides interactive analysis with:
 - SHAP interpretability analysis
 - Clinical insights generation
 
+### Option 3: Web Application (New! 🎉)
+
+```bash
+# Launch the interactive web dashboard
+./run_app.sh
+```
+
+The web application provides:
+- 📤 **Upload**: Multi-source data upload with validation
+- 📊 **Dashboard**: Interactive visualizations and risk analysis
+- 📜 **History**: Track and compare all predictions
+- 💾 **Database**: Persistent storage of all runs
+
+**Access at**: `http://localhost:8501`
+
+See `app/README.md` for detailed documentation
+
 ## 📖 Usage
 
 ### Training with Custom Data
