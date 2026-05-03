@@ -1,0 +1,60 @@
+cff-version: 1.2.0
+title: "An Open Two-Stage Surveillance and Risk-Stratification Pipeline for Chronic Kidney Disease"
+message: "If you use this software, please cite the manuscript and the data sources listed below."
+type: software
+authors:
+  - family-names: Sahu
+    given-names: Ajit
+    email: ajitbubu@gmail.com
+keywords:
+  - chronic kidney disease
+  - public health surveillance
+  - area deprivation index
+  - CDC PLACES
+  - NHANES
+  - XGBoost
+  - health equity
+license: MIT
+date-released: 2026-05-02
+references:
+  - type: article
+    title: "Making Neighborhood-Disadvantage Metrics Accessible — The Neighborhood Atlas"
+    authors:
+      - family-names: Kind
+        given-names: Amy J. H.
+      - family-names: Buckingham
+        given-names: William R.
+    journal: "New England Journal of Medicine"
+    year: 2018
+    volume: 378
+    pages: "2456-2458"
+    pmid: "29949490"
+  - type: article
+    title: "New Creatinine- and Cystatin C-Based Equations to Estimate GFR without Race"
+    authors:
+      - family-names: Inker
+        given-names: Lesley A.
+    journal: "New England Journal of Medicine"
+    year: 2021
+    volume: 385
+    pages: "1737-1749"
+  - type: data
+    title: "Area Deprivation Index v4.0.1, 2020 release"
+    authors:
+      - name: "University of Wisconsin Neighborhood Atlas"
+    url: "https://www.neighborhoodatlas.medicine.wisc.edu/"
+  - type: data
+    title: "PLACES: Census Tract Data (GIS Friendly Format), 2022 release"
+    authors:
+      - name: "Centers for Disease Control and Prevention"
+    url: "https://data.cdc.gov/d/shc3-fzig"
+  - type: data
+    title: "National Health and Nutrition Examination Survey 2017-2020 pre-pandemic and 2021-2022 cycles"
+    authors:
+      - name: "Centers for Disease Control and Prevention, NCHS"
+    url: "https://wwwn.cdc.gov/Nchs/Nhanes/"
+  - type: data
+    title: "USRDS 2023 Annual Data Report"
+    authors:
+      - name: "United States Renal Data System"
+    url: "https://usrds-adr.niddk.nih.gov/2023"

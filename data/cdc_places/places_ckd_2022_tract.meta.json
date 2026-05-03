@@ -1,0 +1,10 @@
+{
+  "source": "CDC PLACES 2022 release - census tract level (GIS friendly)",
+  "dataset_id": "shc3-fzig",
+  "measure": "Chronic kidney disease among adults aged >=18 years (crude prevalence, BRFSS 2020)",
+  "n_tracts": 72337,
+  "ckd_pct_mean": 2.9591357120145982,
+  "ckd_pct_min": 0.5,
+  "ckd_pct_max": 14.4,
+  "note": "2024/2025 PLACES tract releases dropped CKD; 2022 release is the most recent tract-level source with CKD prevalence."
+}

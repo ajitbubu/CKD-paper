@@ -42,6 +42,19 @@ data/processed/*
 data/synthetic/*.csv
 data/synthetic/*.parquet
 
+# UW Neighborhood Atlas ADI - license forbids redistribution; users must
+# download themselves from neighborhoodatlas.medicine.wisc.edu/download
+data/adi_2020_national_blockgroup.csv
+data/adi-download/
+
+# NHANES raw XPT cache - re-downloadable via src/data_processing/fetch_nhanes.py
+data/nhanes/_cache/
+
+# Microsoft Office lock files
+~$*.docx
+~$*.doc
+~$*.xlsx
+
 # Models (large files)
 models/*.pkl
 models/*.joblib

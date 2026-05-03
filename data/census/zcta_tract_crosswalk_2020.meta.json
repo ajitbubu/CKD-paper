@@ -1,0 +1,11 @@
+{
+  "source_url": "https://www2.census.gov/geo/docs/maps-data/data/rel2020/zcta520/tab20_zcta520_tract20_natl.txt",
+  "n_overlaps": 171480,
+  "n_unique_zcta": 33791,
+  "n_unique_tract": 85528,
+  "columns_resolved": {
+    "zcta": "GEOID_ZCTA5_20",
+    "tract": "GEOID_TRACT_20",
+    "arealand_part": "AREALAND_PART"
+  }
+}
