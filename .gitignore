@@ -62,12 +62,15 @@ models/*.h5
 models/*.pt
 models/*.pth
 
-# Results
-results/figures/*.png
-results/figures/*.jpg
-results/figures/*.pdf
-results/metrics/*.csv
-results/metrics/*.json
+# Results - included in repo as the published research artefact for the
+# JMIR submission. Regenerable via `make all` after `make data`.
+# (Was previously excluded; kept here for reference if the repo is forked
+# for new modeling work and these become stale.)
+# results/figures/*.png
+# results/figures/*.jpg
+# results/figures/*.pdf
+# results/metrics/*.csv
+# results/metrics/*.json
 
 # IDE
 .vscode/

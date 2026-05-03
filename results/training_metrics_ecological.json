@@ -1,0 +1,102 @@
+{
+  "n_tracts_trained": 60445,
+  "by_region": {
+    "South": 20121,
+    "Midwest": 15135,
+    "West": 13211,
+    "Northeast": 11978
+  },
+  "outcome_mean_pct": 2.9922739680701462,
+  "outcome_std_pct": 0.8365234941125379,
+  "outcome_min_pct": 0.6,
+  "outcome_max_pct": 9.9,
+  "random_5fold_cv": {
+    "R2_mean": 0.4503285104167817,
+    "R2_std": 0.005599615686529749,
+    "MAE_mean": 0.44715013523040276,
+    "MAE_std": 0.0015347325845350634
+  },
+  "leave_one_region_out_cv": [
+    {
+      "held_out_region": "Midwest",
+      "n_train": 45310,
+      "n_test": 15135,
+      "R2": 0.4069048965315676,
+      "MAE": 0.4671498663448287,
+      "RMSE": 0.6228920803020258,
+      "calibration_slope": 0.9087034736215497,
+      "calibration_intercept": 0.0831179340034922
+    },
+    {
+      "held_out_region": "Northeast",
+      "n_train": 48467,
+      "n_test": 11978,
+      "R2": 0.25082172963106497,
+      "MAE": 0.42604080390643545,
+      "RMSE": 0.605433411044403,
+      "calibration_slope": 0.7125137347924917,
+      "calibration_intercept": 0.8260932377631015
+    },
+    {
+      "held_out_region": "South",
+      "n_train": 40324,
+      "n_test": 20121,
+      "R2": 0.4148345693232762,
+      "MAE": 0.5150953020598518,
+      "RMSE": 0.7163872848512898,
+      "calibration_slope": 1.1424316002570598,
+      "calibration_intercept": -0.2373315486511398
+    },
+    {
+      "held_out_region": "West",
+      "n_train": 47234,
+      "n_test": 13211,
+      "R2": 0.23929221034589643,
+      "MAE": 0.46713950401196713,
+      "RMSE": 0.6272076896774057,
+      "calibration_slope": 0.7802118171388255,
+      "calibration_intercept": 0.5852630429079775
+    }
+  ],
+  "sensitivity_to_capacity": [
+    {
+      "n_estimators": 200,
+      "max_depth": 3,
+      "learning_rate": 0.1,
+      "CV_R2": 0.44598287280314486,
+      "CV_MAE": 0.4478877840145457
+    },
+    {
+      "n_estimators": 400,
+      "max_depth": 4,
+      "learning_rate": 0.05,
+      "CV_R2": 0.4484435795485983,
+      "CV_MAE": 0.4470710705476222
+    },
+    {
+      "n_estimators": 600,
+      "max_depth": 5,
+      "learning_rate": 0.05,
+      "CV_R2": 0.4503285104167817,
+      "CV_MAE": 0.44715013523040276
+    },
+    {
+      "n_estimators": 800,
+      "max_depth": 6,
+      "learning_rate": 0.03,
+      "CV_R2": 0.4505522528669784,
+      "CV_MAE": 0.44724184017479585
+    },
+    {
+      "n_estimators": 1000,
+      "max_depth": 7,
+      "learning_rate": 0.03,
+      "CV_R2": 0.44793917324215704,
+      "CV_MAE": 0.4491181316043614
+    }
+  ],
+  "train_full_fit": {
+    "R2": 0.4688083253166484,
+    "MAE": 0.43858362685520763
+  }
+}

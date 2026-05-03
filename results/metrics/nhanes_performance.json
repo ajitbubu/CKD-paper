@@ -1,0 +1,101 @@
+{
+  "n_total": 15150,
+  "n_ckd_positive": 2706,
+  "ckd_prevalence_unweighted": 0.1786138613861386,
+  "ckd_prevalence_weighted": 0.13926756131255288,
+  "oof_AUROC": 0.7720581985740491,
+  "oof_AUPRC": 0.4031568244444751,
+  "oof_Brier": 0.10200887525290578,
+  "calibration_slope": 0.8066941209448835,
+  "calibration_intercept": 0.031381271507947193,
+  "auroc_min": 0.7544557858694395,
+  "auroc_max": 0.8016205550930907,
+  "auroc_per_fold": [
+    0.7645083125268854,
+    0.7821226744779345,
+    0.7544557858694395,
+    0.7588595957953824,
+    0.8016205550930907
+  ],
+  "subgroup_AUROC": [
+    {
+      "group": "Age",
+      "level": "50-64",
+      "n": 4081,
+      "n_pos": 696,
+      "AUROC": 0.7119687964199938
+    },
+    {
+      "group": "Age",
+      "level": "<50",
+      "n": 6917,
+      "n_pos": 529,
+      "AUROC": 0.6365875196900964
+    },
+    {
+      "group": "Age",
+      "level": "\u226565",
+      "n": 4152,
+      "n_pos": 1481,
+      "AUROC": 0.6980577500505742
+    },
+    {
+      "group": "Sex",
+      "level": "Female",
+      "n": 8000,
+      "n_pos": 1409,
+      "AUROC": 0.7353106000560774
+    },
+    {
+      "group": "Sex",
+      "level": "Male",
+      "n": 7150,
+      "n_pos": 1297,
+      "AUROC": 0.8057325046862184
+    },
+    {
+      "group": "Race/Ethnicity",
+      "level": "Mexican American",
+      "n": 1492,
+      "n_pos": 219,
+      "AUROC": 0.6996224275752693
+    },
+    {
+      "group": "Race/Ethnicity",
+      "level": "Non-Hispanic Asian",
+      "n": 1417,
+      "n_pos": 204,
+      "AUROC": 0.7735456731875361
+    },
+    {
+      "group": "Race/Ethnicity",
+      "level": "Non-Hispanic Black",
+      "n": 3122,
+      "n_pos": 698,
+      "AUROC": 0.7666243694784787
+    },
+    {
+      "group": "Race/Ethnicity",
+      "level": "Non-Hispanic White",
+      "n": 6710,
+      "n_pos": 1207,
+      "AUROC": 0.7754714786685826
+    },
+    {
+      "group": "Race/Ethnicity",
+      "level": "Other / Multi-racial",
+      "n": 845,
+      "n_pos": 159,
+      "AUROC": 0.8189968830169467
+    },
+    {
+      "group": "Race/Ethnicity",
+      "level": "Other Hispanic",
+      "n": 1564,
+      "n_pos": 219,
+      "AUROC": 0.7458920783748328
+    }
+  ],
+  "sens_at_90_spec": 0.46067006506613545,
+  "threshold_at_90_spec": 0.2898814976215362
+}
